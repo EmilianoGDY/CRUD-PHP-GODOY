@@ -13,3 +13,12 @@ body {
 #contenedor-ppal{
     margin: 200px 0 0 0;
 }
+
+h1{
+    background-color:azure;
+    border-radius: 10px;
+}
+
+#Cuadro-Login{
+    border-radius: 30px;
+}
