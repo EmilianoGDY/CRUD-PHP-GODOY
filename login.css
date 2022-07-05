@@ -1,0 +1,15 @@
+body {
+    background: dimgray;
+}
+
+#usuario{
+    padding: 20px;
+}
+
+#clave{
+    padding: 20px;
+}
+
+#contenedor-ppal{
+    margin: 200px 0 0 0;
+}
