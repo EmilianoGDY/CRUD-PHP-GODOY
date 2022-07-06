@@ -13,11 +13,49 @@
     <title>Document</title>
 </head>
 <body>
+
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Pelis Retro</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="login.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Quienes Somos ?</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>  
+      <!-- Barra de Navegacion -->
+      
+      <?php if(!empty($message)): ?>
+
     <div class="modal-dialog text-center " >
         <div class="col-sm-12">
             <div class="modal-content " id="contenedor-ppal">
             
-               <form class="col-12" method="post" action="login.php">
+               <form class="col-12" method="post" action="registro.php">
+
                     <div class="form-group" id="usuario">
                         <input type="email" class="form-control" placeholder="Correo Electronico" name="user">
                     </div>
@@ -25,7 +63,7 @@
                         <input type="password" class="form-control" placeholder="Ingrese su clave" name="pass">
                     </div>
                     <div class="form-group" id="clave">
-                        <input type="password" class="form-control" placeholder="Repita su Clave" name="pass">
+                        <input type="password" class="form-control" placeholder="Repita su Clave" name="pass2">
                     </div>
                     
                     <br>
@@ -41,3 +79,12 @@
         </div>
 
     </div>      
+
+
+
+
+
+
+    <!-- Script Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
